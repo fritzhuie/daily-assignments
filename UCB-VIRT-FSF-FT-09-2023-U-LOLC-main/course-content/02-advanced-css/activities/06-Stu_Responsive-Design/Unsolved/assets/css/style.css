@@ -6,10 +6,12 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: Arial;
   margin: 0;
 }
+
 
 header {
   padding: 40px;
@@ -35,13 +37,14 @@ nav a {
 }
 
 /* 
-What is the flex-wrap property? 
-TODO: Write your answer here 
+Flex-wrap attempts to line up all items in a row
+The "wrap" parameter allows elements to wrap if they don't fit horizontally
 */
 main {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 aside {
   flex: 1;
@@ -59,8 +62,9 @@ footer {
 }
 
 /* 
-What does the justify-content property do? 
-TODO: Write your answer here 
+justify-content arranges the elements in a row based on the parameter
+In this case, "center" removes space between the elements,
+and adds equal space on the right and left
 */
 .products {
   flex: 4;
@@ -73,8 +77,12 @@ TODO: Write your answer here
 
 /* 
 What is the flex property a shorthand property for?
-What is it doing here? 
-TODO: Write your answer here 
+What is it doing here?
+Flex is shorthand for flex-grow / flex-shrink / flex-basis
+i.e.:    `flex: flex-grow flex-shrink flex-basis`
+flex-grow: 0
+flex-shrink: 0
+flex-basis (default size) 400px
 */
 .card {
   border-style: solid;
@@ -99,7 +107,8 @@ TODO: Write your answer here
 /* 
 What does the flex-direction property define?
 What is it doing here? 
-TODO: Write your answer here 
+flex-direction is setting the stack direction,
+in this case vertical (column)
 */
 @media screen and (max-width: 768px) {
   main,
