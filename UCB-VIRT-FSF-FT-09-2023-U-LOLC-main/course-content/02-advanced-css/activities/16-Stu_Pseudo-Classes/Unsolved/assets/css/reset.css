@@ -27,3 +27,7 @@ pre, code {
 ol, ul {
   list-style: none;
 }
+
+.hidden-links {
+  flex-direction: column;
+}
