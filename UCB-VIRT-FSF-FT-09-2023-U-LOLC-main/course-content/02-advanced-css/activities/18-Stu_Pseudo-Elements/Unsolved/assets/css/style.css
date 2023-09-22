@@ -59,7 +59,15 @@ article p {
   font-size: 110%;
 }
 
-/* TODO: Style the term/phrase - underline, black text, grab cursor */
+.tooltip {
+  font-weight: bold;
+  font-style: italic;
+  color: blue;
+}
+
+.tooltip:hover {
+  color:red;
+}
 
 /* TODO: Position tooltip above the term/phrase, same color as header and nav links, no border-radius, smaller font size */
 
