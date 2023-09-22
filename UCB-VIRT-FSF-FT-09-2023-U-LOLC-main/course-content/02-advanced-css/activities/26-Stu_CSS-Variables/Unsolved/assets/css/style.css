@@ -1,3 +1,13 @@
+:root {
+  --light-background-color: #fff;
+  --light-foreground-color: #fff;
+  --dark-background-color: #13293d;
+  --nav-background-color: #d8a47f;
+  --box-shadow-color: #aaaaaa;
+
+  --border-radius: 50px
+}
+
 body {
   font-size: 16px;
   display: flex;
@@ -19,24 +29,24 @@ h2 {
 header {
   padding: 40px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: var(--dark-background-color);
+  color: var(--light-foreground-color);
 }
 
 nav {
   display: flex;
-  background-color: #d8a47f;
+  background-color: var(--nav-background-color)
 }
 
 nav a {
-  color: #13293d;
+  color: var(--dark-foreground-color);
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
 
 nav a:hover {
-  background-color: #fff;
+  background-color: var(--light-background-color);
 }
 
 main {
@@ -50,13 +60,13 @@ footer {
   padding: 20px;
   text-align: center;
   background: #13293d;
-  color: #fff;
+  color: var(--light-foreground-color);
   margin-top: auto;
 }
 
 .products {
   flex: 1;
-  background-color: #fff;
+  background-color: var(--light-background-color);
   padding: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -66,16 +76,20 @@ footer {
 .card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 50px;
+  border-radius: var(--border-radius);
   padding: 10px;
   flex: 0 0 300px;
   transform: rotate(8deg);
-  box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 10px 10px 5px var(--box-shadow-color);
   margin: 20px;
 }
 
+.card img {
+  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+
 .card > header {
-  border-radius: 50px 50px 0px 0px;
+  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
   padding: 20px;
 }
 
